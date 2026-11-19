@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Paiement non abouti – AuraDoc</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #F3F6F8;
+    --line: #D5DEE3;
+    --text: #14232B;
+    --muted: #50626C;
+    --accent: #B3402F;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0F1A20;
+      --line: #2A3B45;
+      --text: #E8EFF2;
+      --muted: #9FB1BA;
+      --accent: #FF8A76;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    text-align: center;
+  }
+  main { width: 100%; max-width: 26rem; }
+  .mark { width: 64px; height: 64px; margin: 0 auto 24px; display: block; }
+  h1 { margin: 0 0 12px; font-size: 1.75rem; line-height: 1.2; font-weight: 650; letter-spacing: -0.01em; }
+  p { margin: 0 0 12px; color: var(--muted); font-size: 1.0625rem; }
+  p.next { color: var(--text); }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 28px auto 16px; width: 40%; }
+  small { color: var(--muted); font-size: 0.875rem; }
+</style>
+</head>
+<body>
+  <main>
+    <svg class="mark" viewBox="0 0 56 56" role="img" aria-label="Croix d’erreur" fill="none" stroke="var(--accent)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="28" cy="28" r="26"/>
+      <path d="M19 19l18 18M37 19L19 37"/>
+    </svg>
+    <h1>Paiement non abouti</h1>
+    <p>Le paiement a échoué ou a été annulé.</p>
+    <p class="next">Retournez dans l’application AuraDoc pour réessayer.</p>
+    <hr>
+    <small>Vous pouvez fermer cette page.</small>
+  </main>
+</body>
+</html>
